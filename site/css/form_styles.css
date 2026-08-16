@@ -1,0 +1,90 @@
+/* ================================================
+   ЛАБОРАТОРИЯ САДА — Стилизация формы GetCourse
+   Только визуальные изменения, без layout
+================================================ */
+
+/* ── Фон формы ── */
+.lt-form-inner {
+  background: #F7F3EC !important;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+/* ── Поля ввода — только визуал ── */
+.f-input {
+  font-family: 'Raleway', sans-serif !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid #D8CFC0 !important;
+  border-radius: 6px !important;
+  color: #1A2318 !important;
+  transition: border-color 0.2s !important;
+}
+.f-input:focus {
+  border-color: #2E6B38 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(46,107,56,0.08) !important;
+}
+.f-input::placeholder { color: #B5BAB3 !important; }
+
+/* ── Строки офферов — только визуал ── */
+.form-position {
+  background: #FFFFFF !important;
+  border: 1.5px solid #EDE6D8 !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s !important;
+}
+.form-position:hover {
+  border-color: #2E6B38 !important;
+}
+.form-position:has(input:checked) {
+  border-color: #2E6B38 !important;
+  background: #F4FAF5 !important;
+}
+
+/* ── Название и цена оффера ── */
+.offer-title {
+  font-family: 'Raleway', sans-serif !important;
+  color: #1A2318 !important;
+}
+.final-price {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 700 !important;
+  color: #1C3D22 !important;
+}
+
+/* ── Кнопка «Купить» ── */
+.f-btn {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  background: #2E6B38 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 4px !important;
+  transition: background 0.2s !important;
+}
+.f-btn:hover { background: #1C3D22 !important; }
+.f-btn:disabled { opacity: 0.6 !important; }
+
+/* ── Кнопка Telegram ── */
+.tg-login-advanced {
+  border-radius: 6px !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* ── Текст в форме ── */
+.lt-form-inner p,
+.lt-form-inner .enter-social-block {
+  font-family: 'Raleway', sans-serif !important;
+  color: #6B7868 !important;
+}
+
+/* ── Заголовок ── */
+.lt-form-inner h1,
+.lt-form-inner h2,
+.lt-form-inner h3,
+.lt-form-inner h4 {
+  font-family: 'Cormorant Garamond', serif !important;
+  color: #1C3D22 !important;
+}

@@ -1,0 +1,151 @@
+/* ================================================
+   ЛАБОРАТОРИЯ САДА — Стили формы в попапе
+   Для страниц МК с отключёнными дефолтными стилями
+================================================ */
+
+/* ── Фон и шрифт формы ── */
+.modal-block-content .lt-form-inner,
+.modal-block-content .lt-normal-form {
+  background: #F7F3EC !important;
+  font-family: 'Raleway', sans-serif !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+}
+
+/* ── Поля ввода ── */
+.modal-block-content .f-input {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-family: 'Raleway', sans-serif !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid #D8CFC0 !important;
+  border-radius: 6px !important;
+  padding: 11px 14px !important;
+  font-size: 14px !important;
+  color: #1A2318 !important;
+  margin-bottom: 10px !important;
+  transition: border-color 0.2s !important;
+}
+.modal-block-content .f-input:focus {
+  border-color: #2E6B38 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(46,107,56,0.08) !important;
+}
+.modal-block-content .f-input::placeholder { color: #B5BAB3 !important; }
+
+/* ── Строки офферов ── */
+.modal-block-content .form-position {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid #EDE6D8 !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  margin-bottom: 8px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  transition: border-color 0.2s !important;
+}
+.modal-block-content .form-position:hover {
+  border-color: #2E6B38 !important;
+}
+.modal-block-content .form-position:has(input:checked) {
+  border-color: #2E6B38 !important;
+  background: #F4FAF5 !important;
+}
+.modal-block-content .form-position-checker {
+  float: none !important;
+  flex-shrink: 0 !important;
+}
+.modal-block-content .form-position-title {
+  float: none !important;
+  flex: 1 !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #1A2318 !important;
+}
+.modal-block-content .form-position-price {
+  float: none !important;
+  margin-left: auto !important;
+  text-align: right !important;
+  flex-shrink: 0 !important;
+}
+.modal-block-content .final-price {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #1C3D22 !important;
+}
+.modal-block-content input[type="checkbox"] {
+  width: auto !important;
+  margin: 0 !important;
+}
+
+/* ── Кнопка «Купить» ── */
+.modal-block-content .f-btn {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  background: #2E6B38 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 14px 24px !important;
+  cursor: pointer !important;
+  transition: background 0.2s !important;
+  margin-top: 8px !important;
+}
+.modal-block-content .f-btn:hover { background: #1C3D22 !important; }
+.modal-block-content .f-btn:disabled { opacity: 0.6 !important; }
+
+/* ── Кнопка Telegram ── */
+.modal-block-content .tg-login-advanced {
+  display: flex !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 20px !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 6px !important;
+}
+
+/* ── Текст внутри формы ── */
+.modal-block-content p,
+.modal-block-content .enter-social-block {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 13px !important;
+  color: #6B7868 !important;
+  line-height: 1.6 !important;
+}
+
+/* ── Заголовок попапа ── */
+.modal-block-content h1,
+.modal-block-content h2,
+.modal-block-content h3,
+.modal-block-content h4 {
+  font-family: 'Cormorant Garamond', serif !important;
+  color: #1C3D22 !important;
+}
+
+/* ── Ширина попапа ── */
+.modal-dialog {
+  width: 640px !important;
+  max-width: 92vw !important;
+}
+
+/* ── Фикс ширины страницы ── */
+.gc-main-content,
+.front-page-content {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
